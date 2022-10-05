@@ -1,0 +1,2026 @@
+fileFormatVersion: 2
+guid: c6b5210c7b47b8e4286f3f084f295508
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pillow_Change_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 844
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1129c7be96e614891f0478a0af79cd
+      internalID: 594575128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 844
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951fdce262f4757409b2a7d3a566a972
+      internalID: -2108319695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_2
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 844
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489d099bcc32e70468711ab7772b3fc8
+      internalID: 381050481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_3
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 844
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a64d3bf62f5b2a46a1a1bafc3813dc3
+      internalID: -501100497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_4
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 844
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add0bdc4602ad0441adaa1c8fdb8cc29
+      internalID: -46301378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_5
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 844
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52866b68a1787f64a993d783b2345469
+      internalID: 2117085514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_6
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 844
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddbef000d4aa9184c81d0ea9b88a9d6d
+      internalID: -2014778557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_7
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 844
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fa086e99e0df24687ffc04a8198fef
+      internalID: 1780709768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 767
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b24bdc01e99dd479d488cb3bf5a77c
+      internalID: -1991892262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_9
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 767
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a72fd943dcea13468204c0064d0edd6
+      internalID: 366261763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_10
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 767
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bec07804f1f0be4c9741afa34af032f
+      internalID: 1709010080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_11
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 767
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf39a7401c33be44844928d9b9b873a
+      internalID: 1559491471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_12
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 767
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42628dff4dcbac94ca13732c02f1b428
+      internalID: 1214181788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_13
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 767
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddcfb18efdaa6345a9fe9080269e335
+      internalID: 610668131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_14
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 767
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b0c007c27b48b43bb11f546d9112e5
+      internalID: -2025645961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_15
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 767
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f39d10105a18a45bc9cae6865f1e36
+      internalID: -434238331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 690
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9179eea9666dc03448b5957ca6b53acf
+      internalID: 385702029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_17
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 690
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9510ef7d30e1464baff96c4704273cc
+      internalID: 1571504953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_18
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 690
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08dabc34def9b4a4089f6867ea3fab71
+      internalID: -844748837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_19
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 690
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9273b4b7490f71f488a27ec549de180d
+      internalID: -348380843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_20
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 690
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79266fd1502e8e14bb8e9b2e590bce4b
+      internalID: -741476324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_21
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 690
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408eda52671c7844286ff38cb4a1916f
+      internalID: 903134131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_22
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 690
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96242ee684f83d41b206471206fb2d1
+      internalID: -1301523201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_23
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 690
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617364b784d076342ab31b7fc9f20c91
+      internalID: -487890096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 613
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169e9071fe0c9174d916d0d9ef826f08
+      internalID: -1842616539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_25
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 613
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2beabc49ca78a44e8fed87e1d95a0ff
+      internalID: -1301734360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_26
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 613
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6176eaf5413f8e24197961e90905ddd3
+      internalID: -1668794393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_27
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 613
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6984beec8c67e664aaf7ff4c0ab8de96
+      internalID: -1650598460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_28
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 613
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10af5be07509be44bd325f2808e12e2
+      internalID: -615329249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_29
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 613
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f26fc5ffa8dc1e4e822afb123f04a0e
+      internalID: -131979265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_30
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 613
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a655d9039f3668a45a3da4cae2e32d2e
+      internalID: -1707998564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_31
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 613
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd6a2fca1d744348a3516aff628f29f
+      internalID: 2064665418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 536
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032c57c81b8c34644a875094d34508b5
+      internalID: 215869544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_33
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 536
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90df923edeff834cb7090ca7dabff48
+      internalID: -527150685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_34
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 536
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c50b3265447c804383a00cbf11520c9
+      internalID: 1153924125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_35
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 536
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b06a6f9cd857b4ebfa5f9636d42470
+      internalID: -954182245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_36
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 536
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2667f318983df8e46a8960edbcad8c45
+      internalID: -1628391562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_37
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 536
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae641291cbb2ce64380e389702f99cc7
+      internalID: -762975199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 459
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea358df2a146b304a9444df083987d09
+      internalID: 1733747254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_39
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 459
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fe9e7178b2fab4fb09f353d9482437
+      internalID: 1785974539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_40
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 459
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d615bd9c237905c45ad121b0db012d30
+      internalID: -251468881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_41
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 459
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c5143f36ec7084db8b2bca00500259
+      internalID: 546409966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_42
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 459
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ae061b6e722b844b5c72e09c9b8922
+      internalID: -1493447997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_43
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 459
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746c1cfd6fde26e489a414a5b597aa23
+      internalID: -911732474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_44
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 459
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1125594a6f483004b81cb0a9f9157dcf
+      internalID: -1678231605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_45
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 459
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ebc06555745e34d81ece27279e8004
+      internalID: 525053271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 382
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24308e7b8d309f4b83c311bdcd82666
+      internalID: 1053010334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_47
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 382
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e16687a4605d974f8bbc56b0d236492
+      internalID: 972280060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_48
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 382
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4404670513da746a4a825feeea5099
+      internalID: 1710031029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_49
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 382
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe77620a06c44454c95c4345b1a813b7
+      internalID: -1540124380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_50
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 382
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10700bac18aaae4f8c6aa7791917c09
+      internalID: -378128708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_51
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 382
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444011e15b82bc34caff0f540efcad2b
+      internalID: 945165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_52
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 382
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905a1079f324f03438f3ffd406226e9b
+      internalID: -1681567955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_53
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 382
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c86af68de71a64883e426697cbd0da
+      internalID: 1077861043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 305
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84445276f8926247a533944135b5005
+      internalID: -2043885649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_55
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 305
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a4636aa2a27c94abfee50fbd6ce639
+      internalID: 597646431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_56
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 305
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9372eef219e3f2d46a85bc46a5e65201
+      internalID: -725736064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_57
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 305
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02290f43bd3aeb448a615fda7382c370
+      internalID: -1119319140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_58
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 305
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b3044927868fe4096f9d0314487de8
+      internalID: -1522988777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_59
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 305
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f81ee710e785b41b39269383f27e79
+      internalID: -1376173681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_60
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 305
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86457464a1a3b244ba0755483e56189a
+      internalID: -526391314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_61
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 305
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67ae8412f81e8249933abb2bb45cd42
+      internalID: 1079408654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 228
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81fbb9e4073af2247b045b1110f692ad
+      internalID: 1189095698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_63
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 228
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa28a222d0fb6434fb97acb64afcf66a
+      internalID: 1763810952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_64
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 228
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f964e6cbe805414888e027a068b5d1c
+      internalID: 368751316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_65
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 228
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491c5f0a195cf6541b439e25065183dc
+      internalID: 1567117760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_66
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 228
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa530242a2c7504d8d0aca5f2518c79
+      internalID: 1508249620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_67
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 228
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73d63a187c91c44a83d656cfdd155eb
+      internalID: 1151295113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_68
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 228
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d878a4ef491c9a845a69701a78b4778e
+      internalID: 1676798603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_69
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 228
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefeca5cdc0df214caffd640fbc0f1ae
+      internalID: 1605217192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 151
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5469fe853e8a5f4baa1e3035cb2e6f4
+      internalID: -1278454059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_71
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 151
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb67d66367382549b410c2c54d4bb1e
+      internalID: -1795254345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_72
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 151
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce0de4cf27cf7548995a843dc78822b
+      internalID: 1301961531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_73
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 151
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f928a8f71b4eff84ca8a122ad6487673
+      internalID: 1721013875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_74
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 151
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8928910216a7a04ba9fc91cd4abf2f2
+      internalID: 1173265076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_75
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 151
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b1072616333eb48a06099af7e16bc0
+      internalID: 162012336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_76
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 151
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6077a441af38ec43967e982a4a3f25b
+      internalID: 1802551743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_77
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 151
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de16ed6b136ca24d9522857a62b552d
+      internalID: 633709877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 74
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929966e8c523eea40bd177d0f86ea7ef
+      internalID: 1176152398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_79
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 74
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36cef13125f74df43b204d8c59641803
+      internalID: -518196497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_80
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 74
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8861dd347e9b5e64f9914946b76d3fd7
+      internalID: -1176506281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_81
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 74
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efa8bbecb4f831498720f48143124d5
+      internalID: -28721685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_82
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 74
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368e9106725a9fa4380b641ba3989a9e
+      internalID: 389030397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_83
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 74
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605a8256f6d208b4b850c6259da3ae77
+      internalID: 1873341111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_84
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 74
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838ab9e30ed02b04fa2155858979979d
+      internalID: 1301142547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillow_Change_85
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 74
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104d67a86316f794ab9ee3203173973d
+      internalID: -973250542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Pillow_Change_43: -911732474
+      Pillow_Change_56: -725736064
+      Pillow_Change_59: -1376173681
+      Pillow_Change_50: -378128708
+      Pillow_Change_67: 1151295113
+      Pillow_Change_14: -2025645961
+      Pillow_Change_41: 546409966
+      Pillow_Change_0: 594575128
+      Pillow_Change_17: 1571504953
+      Pillow_Change_5: 2117085514
+      Pillow_Change_68: 1676798603
+      Pillow_Change_30: -1707998564
+      Pillow_Change_66: 1508249620
+      Pillow_Change_81: -28721685
+      Pillow_Change_15: -434238331
+      Pillow_Change_71: -1795254345
+      Pillow_Change_6: -2014778557
+      Pillow_Change_21: 903134131
+      Pillow_Change_46: 1053010334
+      Pillow_Change_3: -501100497
+      Pillow_Change_73: 1721013875
+      Pillow_Change_83: 1873341111
+      Pillow_Change_51: 945165
+      Pillow_Change_70: -1278454059
+      Pillow_Change_11: 1559491471
+      Pillow_Change_25: -1301734360
+      Pillow_Change_80: -1176506281
+      Pillow_Change_78: 1176152398
+      Pillow_Change_38: 1733747254
+      Pillow_Change_18: -844748837
+      Pillow_Change_48: 1710031029
+      Pillow_Change_72: 1301961531
+      Pillow_Change_75: 162012336
+      Pillow_Change_19: -348380843
+      Pillow_Change_37: -762975199
+      Pillow_Change_8: -1991892262
+      Pillow_Change_36: -1628391562
+      Pillow_Change_28: -615329249
+      Pillow_Change_79: -518196497
+      Pillow_Change_54: -2043885649
+      Pillow_Change_55: 597646431
+      Pillow_Change_76: 1802551743
+      Pillow_Change_77: 633709877
+      Pillow_Change_32: 215869544
+      Pillow_Change_13: 610668131
+      Pillow_Change_63: 1763810952
+      Pillow_Change_1: -2108319695
+      Pillow_Change_74: 1173265076
+      Pillow_Change_42: -1493447997
+      Pillow_Change_16: 385702029
+      Pillow_Change_12: 1214181788
+      Pillow_Change_53: 1077861043
+      Pillow_Change_58: -1522988777
+      Pillow_Change_27: -1650598460
+      Pillow_Change_44: -1678231605
+      Pillow_Change_2: 381050481
+      Pillow_Change_62: 1189095698
+      Pillow_Change_47: 972280060
+      Pillow_Change_57: -1119319140
+      Pillow_Change_26: -1668794393
+      Pillow_Change_10: 1709010080
+      Pillow_Change_52: -1681567955
+      Pillow_Change_60: -526391314
+      Pillow_Change_85: -973250542
+      Pillow_Change_34: 1153924125
+      Pillow_Change_69: 1605217192
+      Pillow_Change_23: -487890096
+      Pillow_Change_9: 366261763
+      Pillow_Change_45: 525053271
+      Pillow_Change_7: 1780709768
+      Pillow_Change_31: 2064665418
+      Pillow_Change_35: -954182245
+      Pillow_Change_49: -1540124380
+      Pillow_Change_61: 1079408654
+      Pillow_Change_24: -1842616539
+      Pillow_Change_33: -527150685
+      Pillow_Change_20: -741476324
+      Pillow_Change_39: 1785974539
+      Pillow_Change_29: -131979265
+      Pillow_Change_40: -251468881
+      Pillow_Change_4: -46301378
+      Pillow_Change_82: 389030397
+      Pillow_Change_22: -1301523201
+      Pillow_Change_84: 1301142547
+      Pillow_Change_65: 1567117760
+      Pillow_Change_64: 368751316
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
