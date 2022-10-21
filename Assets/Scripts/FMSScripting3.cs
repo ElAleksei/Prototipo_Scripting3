@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FMSScripting3 : MonoBehaviour
+public class FMSScripting3 : State
 {
 
     public State m_Current;
@@ -10,12 +10,16 @@ public class FMSScripting3 : MonoBehaviour
     public State m_Move;
     public State m_Attack;
 
+    public List<Vector2> m_path;
+
     // Start is called before the first frame update
     void Start()
     {
+        
+
         m_Idle = gameObject.AddComponent<Idle>();
         m_Attack = gameObject.AddComponent<Attack>();
-        m_Attack = gameObject.AddComponent<Move>();
+        m_Move = gameObject.AddComponent<Move>();
 
         m_Idle.SetFSM(this);
         m_Attack.SetFSM(this);

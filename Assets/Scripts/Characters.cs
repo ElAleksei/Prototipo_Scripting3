@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class Characters : MonoBehaviour
 {
+    [SerializeField]
+    public int Life;
+
+    [SerializeField]
+    public int Velocity;
+
+    [SerializeField]
+    public int Damage;
+
     // Start is called before the first frame update
     void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
     {
         
     }
