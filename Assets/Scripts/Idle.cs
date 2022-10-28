@@ -25,14 +25,13 @@ public class Idle : State
     public override void OnEnter()
     {
         PlayerCellPosition = Pathfinding.tilemap.WorldToCell(transform.position);
-        Box_List = GameObject.FindObjectsOfType<Box>();
-        m_WoodParticles = Resources.Load("Wood_Particles") as GameObject;
-               
+
+        m_WoodParticles = Resources.Load("Wood_Particles") as GameObject;               
     }
 
     public override void OnUpdate()
     {
-        
+        Box_List = GameObject.FindObjectsOfType<Box>();
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -53,6 +52,11 @@ public class Idle : State
 
             for (int i = 0; i < Box_List.Length; i++)
             {
+                if (Box_List[i] == null)
+                {
+                    continue;
+                }
+
                 Box Current_Box = Box_List[i];
 
                 if (m_V2_Target == Current_Box.m_BoxPosition & m_Mag <= m_Tolerance)

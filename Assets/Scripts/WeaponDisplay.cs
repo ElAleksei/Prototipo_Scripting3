@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class WeaponDisplay : MonoBehaviour
 {
-    public SpriteRenderer sprite;
 
     public static GameObject Ins_Weapon;
     public static GameObject Sword;
@@ -39,27 +38,20 @@ public class WeaponDisplay : MonoBehaviour
         Weapon_List[1] = Sword2;
         Weapon_List[2] = Bow;
 
-        sprite = GetComponent<SpriteRenderer>();
 
         cell_position = Pathfinding.tilemap.WorldToCell(transform.position);
 
         SwordWeapon = Resources.Load("Sword") as Weapons;
         SwordDisplay = Sword.GetComponent<WeaponDisplay>();
         SwordDisplay.damage = SwordWeapon.Damage;
-        SwordDisplay.sprite.sprite = SwordWeapon.Image;
 
         Sword2Weapon = Resources.Load("Sword2") as Weapons;
         Sword2Display = Sword2.GetComponent<WeaponDisplay>();
         Sword2Display.damage = Sword2Weapon.Damage;
-        Sword2Display.sprite.sprite = Sword2Weapon.Image;
 
-        BowSprite = Bow.GetComponent<SpriteRenderer>();
         BowWeapon = Resources.Load("Bow") as Weapons;
         BowDisplay = Bow.GetComponent<WeaponDisplay>();
         BowDisplay.damage = BowWeapon.Damage;
-        BowDisplay.BowSprite.sprite = BowWeapon.Image;
-        //damage = weapon.Damage;
-        //sprite.sprite = weapon.Image;
     }
 
     public static void CreateWeapon(Vector3 Position)

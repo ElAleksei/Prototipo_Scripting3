@@ -29,17 +29,33 @@ public class Move : State
     {
         CurrentMovingTime += Time.deltaTime;
 
-
         Vector2 PlayerPos = new Vector2(transform.position.x,transform.position.y);
         Vector2 NewPosition = Vector2.Lerp(Idle.InitialPos, Idle.Target, CurrentMovingTime/MovingTime);
         cellPosition = Pathfinding.tilemap.WorldToCell(NewPosition);
         m_Magnitud = (PlayerPos - Idle.Target).magnitude;
 
-        for (int i = 0; i < m_MoveBox_List.Length; i++)
+        if (m_MoveBox_List != null)
         {
-            Box MoveCurrent_Box = m_MoveBox_List[i];
+            for (int i = 0; i < m_MoveBox_List.Length; i++)
+            {
 
-            if (Pathfinding.tilemap.HasTile(cellPosition) == true & Pathfinding.Is_Wall.HasTile(cellPosition) == false & Pathfinding.Is_Obstacle.HasTile(cellPosition) == false & Pathfinding.Is_Enemies.HasTile(cellPosition) == false & cellPosition != Enemy_Idle.m_EnemyCellPosition & MoveCurrent_Box.m_BoxPosition != cellPosition)
+                Box MoveCurrent_Box = m_MoveBox_List[i];
+
+                if (Pathfinding.tilemap.HasTile(cellPosition) == true & Pathfinding.Is_Wall.HasTile(cellPosition) == false & Pathfinding.Is_Obstacle.HasTile(cellPosition) == false & Pathfinding.Is_Enemies.HasTile(cellPosition) == false & cellPosition != Enemy_Idle.m_EnemyCellPosition & MoveCurrent_Box.m_BoxPosition != cellPosition)
+                {
+                    transform.position = Pathfinding.tilemap.GetCellCenterWorld(cellPosition);
+
+                }
+                else
+                {
+                    m_Tolerance = 2f;
+                }
+            }
+        }
+
+        if (m_MoveBox_List.Length == 0)
+        {
+            if (Pathfinding.tilemap.HasTile(cellPosition) == true & Pathfinding.Is_Wall.HasTile(cellPosition) == false & Pathfinding.Is_Obstacle.HasTile(cellPosition) == false & Pathfinding.Is_Enemies.HasTile(cellPosition) == false & cellPosition != Enemy_Idle.m_EnemyCellPosition)
             {
                 transform.position = Pathfinding.tilemap.GetCellCenterWorld(cellPosition);
 
@@ -49,7 +65,6 @@ public class Move : State
                 m_Tolerance = 2f;
             }
         }
-        
 
         if (m_Magnitud < m_Tolerance)
         {

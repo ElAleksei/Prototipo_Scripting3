@@ -21,7 +21,7 @@ public class Weapon_Change : MonoBehaviour
         newsprite = Weapon.GetComponent<SpriteRenderer>();
         image.color = new Color(255, 255, 255, 255);
         image.sprite = newsprite.sprite;
-        player.Damage += weapondisplay.damage;
+        player.Damage = weapondisplay.damage;
         Debug.Log("A");
     }
 }
