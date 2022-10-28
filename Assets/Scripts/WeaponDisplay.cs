@@ -14,7 +14,15 @@ public class WeaponDisplay : MonoBehaviour
     public static GameObject [] Weapon_List;
     public static int Random_Weapon;
 
-    public Weapons weapon;
+    public Weapons SwordWeapon;
+    public WeaponDisplay SwordDisplay;
+
+    public Weapons Sword2Weapon;
+    public WeaponDisplay Sword2Display;
+
+    public Weapons BowWeapon;
+    public WeaponDisplay BowDisplay;
+    public SpriteRenderer BowSprite;
 
     public Vector3Int cell_position;
     public int damage;
@@ -24,9 +32,9 @@ public class WeaponDisplay : MonoBehaviour
     {
 
         Weapon_List = new GameObject[3];
-        Sword = Resources.Load("Sword") as GameObject;
-        Sword2 = Resources.Load("Sword2") as GameObject;
-        Bow = Resources.Load("Bow") as GameObject;
+        Sword = Resources.Load("SwordPrefab") as GameObject;
+        Sword2 = Resources.Load("Sword2Prefab") as GameObject;
+        Bow = Resources.Load("BowPrefab") as GameObject;
         Weapon_List[0] = Sword;
         Weapon_List[1] = Sword2;
         Weapon_List[2] = Bow;
@@ -34,14 +42,29 @@ public class WeaponDisplay : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
 
         cell_position = Pathfinding.tilemap.WorldToCell(transform.position);
-        damage = weapon.Damage;
-        sprite.sprite = weapon.Image;
+
+        SwordWeapon = Resources.Load("Sword") as Weapons;
+        SwordDisplay = Sword.GetComponent<WeaponDisplay>();
+        SwordDisplay.damage = SwordWeapon.Damage;
+        SwordDisplay.sprite.sprite = SwordWeapon.Image;
+
+        Sword2Weapon = Resources.Load("Sword2") as Weapons;
+        Sword2Display = Sword2.GetComponent<WeaponDisplay>();
+        Sword2Display.damage = Sword2Weapon.Damage;
+        Sword2Display.sprite.sprite = Sword2Weapon.Image;
+
+        BowSprite = Bow.GetComponent<SpriteRenderer>();
+        BowWeapon = Resources.Load("Bow") as Weapons;
+        BowDisplay = Bow.GetComponent<WeaponDisplay>();
+        BowDisplay.damage = BowWeapon.Damage;
+        BowDisplay.BowSprite.sprite = BowWeapon.Image;
+        //damage = weapon.Damage;
+        //sprite.sprite = weapon.Image;
     }
 
     public static void CreateWeapon(Vector3 Position)
     {
         Random_Weapon = Random.Range(0,Weapon_List.Length);
-        
         Ins_Weapon = Instantiate(Weapon_List[Random_Weapon], null, true);
         Ins_Weapon.transform.position = Position;
     }

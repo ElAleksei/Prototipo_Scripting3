@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5315584349228676120}
   - component: {fileID: 5315584349228676126}
   m_Layer: 0
-  m_Name: Sword2
+  m_Name: Sword2Prefab
   m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,9 +45,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9add5bf5d8ff83a48b2ea384997af009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 11400000, guid: 39cdd06251bf77046934b282670e638d, type: 2}
-  damage: 0
   sprite: {fileID: 0}
+  SwordWeapon: {fileID: 0}
+  SwordDisplay: {fileID: 0}
+  Sword2Weapon: {fileID: 0}
+  Sword2Display: {fileID: 0}
+  BowWeapon: {fileID: 0}
+  BowDisplay: {fileID: 0}
+  BowSprite: {fileID: 0}
+  cell_position: {x: 0, y: 0, z: 0}
+  damage: 0
 --- !u!212 &5315584349228676126
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -89,14 +96,14 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 6964a2fed4325b34e916a24b8ee0de6f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.2857143, y: 0.8457143}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0

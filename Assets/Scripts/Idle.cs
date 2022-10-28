@@ -27,7 +27,7 @@ public class Idle : State
         PlayerCellPosition = Pathfinding.tilemap.WorldToCell(transform.position);
         Box_List = GameObject.FindObjectsOfType<Box>();
         m_WoodParticles = Resources.Load("Wood_Particles") as GameObject;
-        Weapon_List = GameObject.FindGameObjectsWithTag("Weapon");        
+               
     }
 
     public override void OnUpdate()
@@ -76,10 +76,17 @@ public class Idle : State
 
         }
 
+        Weapon_List = GameObject.FindGameObjectsWithTag("Weapon");
+        
         if (Weapon_List.Length > 0)
         {
             for (int i = 0; i < Weapon_List.Length; i++)
             {
+                if (Weapon_List[i] == null)
+                {
+                    continue;
+                }
+
                 GameObject Current_Weapon = Weapon_List[i];
                 Vector3Int Current_CellPosition = Pathfinding.tilemap.WorldToCell(Current_Weapon.transform.position);
 
