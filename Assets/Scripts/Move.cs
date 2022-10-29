@@ -20,17 +20,28 @@ public class Move : State
 
     public Box[] m_MoveBox_List;
 
+    public Vector2 PlayerPos = new Vector2(3f,2.25f);
+    public Vector2 NewPosition;
+    public Vector2 CurrentPosition;
+
+    public GameObject m_Player;
+    public Player PlayerScript;
+
     public override void OnEnter()
     {
         m_MoveBox_List = GameObject.FindObjectsOfType<Box>();
+        m_Player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public override void OnUpdate()
     {
         CurrentMovingTime += Time.deltaTime;
-
-        Vector2 PlayerPos = new Vector2(transform.position.x,transform.position.y);
-        Vector2 NewPosition = Vector2.Lerp(Idle.InitialPos, Idle.Target, CurrentMovingTime/MovingTime);
+        CurrentPosition = new Vector2(transform.position.x, transform.position.y);
+        PlayerScript = m_Player.GetComponent<Player>();
+        PlayerScript.UpdateSprite(PlayerPos,CurrentPosition);
+        //
+        PlayerPos = new Vector2(transform.position.x,transform.position.y);
+        NewPosition = Vector2.Lerp(Idle.InitialPos, Idle.Target, CurrentMovingTime/MovingTime);
         cellPosition = Pathfinding.tilemap.WorldToCell(NewPosition);
         m_Magnitud = (PlayerPos - Idle.Target).magnitude;
 

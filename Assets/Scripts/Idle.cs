@@ -37,7 +37,7 @@ public class Idle : State
         {
             InitialPos = transform.position;
             Target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Debug.Log(Target);
+            //Debug.Log(Target);
             m_fsm.SetState(m_fsm.m_Move);
         }
 
@@ -61,7 +61,7 @@ public class Idle : State
 
                 if (m_V2_Target == Current_Box.m_BoxPosition & m_Mag <= m_Tolerance)
                 {
-                    Debug.Log("Cajita");
+                    //Debug.Log("Cajita");
                     m_Instantiate_Wood = Instantiate(m_WoodParticles, null, true);
                     m_Instantiate_Wood.transform.position = new Vector3(Current_Box.transform.position.x, Current_Box.transform.position.y, Current_Box.transform.position.z);
                     WeaponDisplay.CreateWeapon(new Vector3(Current_Box.transform.position.x, Current_Box.transform.position.y, Current_Box.transform.position.z));
@@ -74,7 +74,7 @@ public class Idle : State
 
             if (m_V2_Target == Enemy_Idle.m_EnemyCellPosition & m_Distance_From_Enemy <= m_Tolerance)
             {
-                Debug.Log("Jala");
+                //Debug.Log("Jala");
                 m_fsm.SetState(m_fsm.m_Attack);
             }
 

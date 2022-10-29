@@ -9,7 +9,7 @@ public class Box : MonoBehaviour
     void Start()
     {
         m_BoxPosition = Pathfinding.tilemap.WorldToCell(gameObject.transform.position);
-        Debug.Log(m_BoxPosition);
+        //Debug.Log(m_BoxPosition);
     }
 
     // Update is called once per frame
