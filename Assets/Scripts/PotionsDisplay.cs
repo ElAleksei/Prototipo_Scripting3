@@ -20,11 +20,14 @@ public class PotionsDisplay : MonoBehaviour
     public PotionsDisplay Potion2Display;
     public SpriteRenderer Potion2Sprite;
 
+    public GameObject m_PotionParticles;
+
     public int HP;
 
 
     void Start()
     {
+
         Potion_List = new GameObject[2];
         Potion = Resources.Load("Potion1Prefab") as GameObject;
         Potion_2 = Resources.Load("Potion2Prefab") as GameObject;
@@ -46,5 +49,23 @@ public class PotionsDisplay : MonoBehaviour
         InsPotion = Instantiate(Potion_List[RandomPotion], null, true);
         Vector3 WorldPosition = Pathfinding.tilemap.CellToLocal(Position);
         InsPotion.transform.position = WorldPosition;
+    }
+
+    public static void UsePotion(GameObject Potion)
+    {
+        PotionsDisplay Display = Potion.GetComponent<PotionsDisplay>();
+        Player player = FindObjectOfType<Player>();
+        if (player.Life + Display.HP > 10)
+        {
+            player.Life = 10;
+        }
+
+        else
+        {
+            player.Life += Display.HP;
+        }
+
+        
+
     }
 }

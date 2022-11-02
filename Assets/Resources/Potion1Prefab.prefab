@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -9141359681841642002}
   m_Layer: 0
   m_Name: Potion1Prefab
-  m_TagString: Untagged
+  m_TagString: Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,4 +105,4 @@ MonoBehaviour:
   Potion2: {fileID: 0}
   Potion2Display: {fileID: 0}
   Potion2Sprite: {fileID: 0}
-  HP: 5
+  HP: 3

@@ -12,6 +12,7 @@ TagManager:
   - Break Object
   - Obstacle
   - Weapon
+  - Potion
   layers:
   - Default
   - TransparentFX

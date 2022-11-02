@@ -18,6 +18,7 @@ public class Player: Characters
         m_player = GetComponent<Player>();
         m_player.Life = 10;
         m_player.Damage = 1;
+        m_player.MaxLife = 10;
 
         m_spriteRenderer = GetComponent<SpriteRenderer>();
     }

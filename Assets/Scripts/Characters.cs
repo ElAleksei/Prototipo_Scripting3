@@ -8,6 +8,9 @@ public class Characters : MonoBehaviour
     public int Life;
 
     [SerializeField]
+    public int MaxLife;
+
+    [SerializeField]
     public int Velocity;
 
     [SerializeField]
