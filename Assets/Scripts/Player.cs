@@ -10,8 +10,6 @@ public class Player: Characters
     [SerializeField]
     private int m_Energy;
 
-    public bool m_HasWeapon;
-
     public HealthBar healthbar;
 
     // Start is called before the first frame update

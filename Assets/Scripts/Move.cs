@@ -24,20 +24,20 @@ public class Move : State
     public Vector2 NewPosition;
     public Vector2 CurrentPosition;
 
-    public GameObject m_Player;
+    public GameObject m_PlayerReference;
     public Player PlayerScript;
 
     public override void OnEnter()
     {
         m_MoveBox_List = GameObject.FindObjectsOfType<Box>();
-        m_Player = GameObject.FindGameObjectWithTag("Player");
+        m_PlayerReference = GameObject.FindGameObjectWithTag("Player");
     }
 
     public override void OnUpdate()
     {
         CurrentMovingTime += Time.deltaTime;
         CurrentPosition = new Vector2(transform.position.x, transform.position.y);
-        PlayerScript = m_Player.GetComponent<Player>();
+        PlayerScript = m_PlayerReference.GetComponent<Player>();
         PlayerScript.UpdateSprite(PlayerPos,CurrentPosition);
         //
         PlayerPos = new Vector2(transform.position.x,transform.position.y);

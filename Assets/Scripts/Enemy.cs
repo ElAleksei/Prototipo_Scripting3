@@ -19,6 +19,7 @@ public class Enemy : Characters
     {
         if (m_Enemy.Life <= 0)
         {
+            PotionsDisplay.CreatePotion(Enemy_Idle.m_EnemyCellPosition);
             Destroy(gameObject);
             Enemy_Idle.m_EnemyCellPosition = new Vector3Int(0, 0, 20);
         }
