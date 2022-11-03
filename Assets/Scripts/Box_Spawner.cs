@@ -5,8 +5,6 @@ using UnityEngine;
 public class Box_Spawner : MonoBehaviour
 {
 
-
-    // Update is called once per frame
     void Update()
     {
 

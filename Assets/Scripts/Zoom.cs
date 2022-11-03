@@ -16,12 +16,18 @@ public class Zoom : MonoBehaviour
     {
         if(Input.mouseScrollDelta.y > 0)
         {
-            cam.orthographicSize -= 0.2f;
+            if (cam.orthographicSize > 1)
+            {
+                cam.orthographicSize -= 0.2f;
+            }       
         }
 
         if (Input.mouseScrollDelta.y < 0)
         {
-            cam.orthographicSize += 0.2f;
+            if (cam.orthographicSize < 3)
+            {
+                cam.orthographicSize += 0.2f;
+            }            
         }
     }
 }

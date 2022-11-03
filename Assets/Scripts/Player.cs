@@ -36,8 +36,6 @@ public class Player: Characters
 
     public void UpdateSprite(Vector2 LastPos, Vector2 CurrentPos)
     {
-        Debug.Log(LastPos);
-        Debug.Log(CurrentPos);
         //Ariba derecha
         if (CurrentPos.x > LastPos.x & CurrentPos.y > LastPos.y)
         {

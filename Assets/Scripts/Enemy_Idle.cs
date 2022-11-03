@@ -19,11 +19,6 @@ public class Enemy_Idle : State
         m_Distance = (m_EnemyCellPosition - Idle.PlayerCellPosition).magnitude;
         m_Distance = Mathf.Abs(m_Distance);
 
-        //if (m_Distance < m_EnemyRange)
-        //{
-        //    m_EnemyFSM.SetState(m_EnemyFSM.m_Enemy_Move);
-        //}
-
         if (m_Distance <= m_EnemyAttackRange)
         {
             m_EnemyFSM.SetState(m_EnemyFSM.m_Enemy_Attack);

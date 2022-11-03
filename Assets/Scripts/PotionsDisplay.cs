@@ -22,6 +22,9 @@ public class PotionsDisplay : MonoBehaviour
 
     public GameObject m_PotionParticles;
 
+    public static GameObject [] Inventory;
+    public static Image CubeImage;
+
     public int HP;
 
 
@@ -41,6 +44,8 @@ public class PotionsDisplay : MonoBehaviour
         Potion2 = Resources.Load("ScriptPotion2") as Potions;
         Potion2Display = Potion.GetComponent<PotionsDisplay>();
         Potion2Display.HP = Potion2.HP;
+
+        Inventory = GameObject.FindGameObjectsWithTag("Inventory");
     }
 
     public static void CreatePotion(Vector3Int Position)
@@ -51,10 +56,27 @@ public class PotionsDisplay : MonoBehaviour
         InsPotion.transform.position = WorldPosition;
     }
 
-    public static void UsePotion(GameObject Potion)
+    public static void DrawPotion(GameObject Potion)
+    {       
+        SpriteRenderer sprite = Potion.GetComponent<SpriteRenderer>();
+
+        for (int i = 0; i < Inventory.Length; i++)
+        {
+            Image BoxImage = Inventory[i].GetComponent<Image>();
+
+            if (BoxImage.sprite == null)
+            {
+                BoxImage.sprite = sprite.sprite;
+                break;
+            }
+        }      
+    }
+
+    public static void UsePotion(GameObject Potion, Input key)
     {
         PotionsDisplay Display = Potion.GetComponent<PotionsDisplay>();
-        Player player = FindObjectOfType<Player>();
+        Player player = FindObjectOfType<Player>();        
+
         if (player.Life + Display.HP > 10)
         {
             player.Life = 10;
@@ -64,8 +86,5 @@ public class PotionsDisplay : MonoBehaviour
         {
             player.Life += Display.HP;
         }
-
-        
-
     }
 }

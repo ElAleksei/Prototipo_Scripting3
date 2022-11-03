@@ -16,7 +16,6 @@ public class Characters : MonoBehaviour
     [SerializeField]
     public int Damage;
 
-    // Start is called before the first frame update
     void Start()
     {
         

@@ -41,7 +41,6 @@ public class Idle : State
         {
             InitialPos = transform.position;
             Target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            //Debug.Log(Target);
             m_fsm.SetState(m_fsm.m_Move);
         }
 
@@ -120,7 +119,7 @@ public class Idle : State
 
                 if (PlayerCellPosition == Current_PotionPosition)
                 {
-                    PotionsDisplay.UsePotion(Current_Potion);
+                    PotionsDisplay.DrawPotion(Current_Potion);
                     m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
                     m_PotionParticles.transform.position = new Vector3(Current_Potion.transform.position.x, Current_Potion.transform.position.y, Current_Potion.transform.position.z);
                     Destroy(Current_Potion.gameObject);

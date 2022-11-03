@@ -39,7 +39,7 @@ public class Move : State
         CurrentPosition = new Vector2(transform.position.x, transform.position.y);
         PlayerScript = m_PlayerReference.GetComponent<Player>();
         PlayerScript.UpdateSprite(PlayerPos,CurrentPosition);
-        //
+        
         PlayerPos = new Vector2(transform.position.x,transform.position.y);
         NewPosition = Vector2.Lerp(Idle.InitialPos, Idle.Target, CurrentMovingTime/MovingTime);
         cellPosition = Pathfinding.tilemap.WorldToCell(NewPosition);
