@@ -6,14 +6,18 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     Player player;
-
+    GameObject m_Instantiate_Potion;
+    GameObject m_PotionParticles;
     void Start()
     {
         player = FindObjectOfType<Player>();
+        m_PotionParticles = Resources.Load("Potion_Particles") as GameObject;
     }
 
     void Update()
     {
+        player = FindObjectOfType<Player>();
+
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Image PotionSprite = PotionsDisplay.Inventory[0].GetComponent<Image>();
@@ -30,6 +34,9 @@ public class Inventory : MonoBehaviour
                 {
                     player.Life += 5;
                 }
+
+                m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
+                m_Instantiate_Potion.transform.position = player.transform.position;
             }
 
             PotionSprite.sprite = null;
@@ -51,6 +58,9 @@ public class Inventory : MonoBehaviour
                 {
                     player.Life += 5;
                 }
+
+                m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
+                m_Instantiate_Potion.transform.position = player.transform.position;
             }
 
             PotionSprite.sprite = null;
@@ -72,6 +82,9 @@ public class Inventory : MonoBehaviour
                 {
                     player.Life += 5;
                 }
+
+                m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
+                m_Instantiate_Potion.transform.position = player.transform.position;
             }
 
             PotionSprite.sprite = null;
@@ -93,6 +106,9 @@ public class Inventory : MonoBehaviour
                 {
                     player.Life += 5;
                 }
+
+                m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
+                m_Instantiate_Potion.transform.position = player.transform.position;
             }
 
             PotionSprite.sprite = null;
@@ -114,6 +130,9 @@ public class Inventory : MonoBehaviour
                 {
                     player.Life += 5;
                 }
+
+                m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
+                m_Instantiate_Potion.transform.position = player.transform.position;
             }
 
             PotionSprite.sprite = null;
@@ -135,6 +154,9 @@ public class Inventory : MonoBehaviour
                 {
                     player.Life += 5;
                 }
+
+                m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
+                m_Instantiate_Potion.transform.position = player.transform.position;
             }
 
             PotionSprite.sprite = null;
@@ -156,6 +178,9 @@ public class Inventory : MonoBehaviour
                 {
                     player.Life += 5;
                 }
+
+                m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
+                m_Instantiate_Potion.transform.position = player.transform.position;
             }
 
             PotionSprite.sprite = null;
@@ -177,6 +202,9 @@ public class Inventory : MonoBehaviour
                 {
                     player.Life += 5;
                 }
+
+                m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
+                m_Instantiate_Potion.transform.position = player.transform.position;
             }
 
             PotionSprite.sprite = null;
@@ -198,6 +226,9 @@ public class Inventory : MonoBehaviour
                 {
                     player.Life += 5;
                 }
+
+                m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
+                m_Instantiate_Potion.transform.position = player.transform.position;
             }
 
             PotionSprite.sprite = null;
