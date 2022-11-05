@@ -12,6 +12,9 @@ public class Player: Characters
 
     public HealthBar healthbar;
 
+    GameObject PlayerAudio;
+    AudioSource m_PlayerSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,13 +24,17 @@ public class Player: Characters
         m_player.MaxLife = 10;
 
         m_spriteRenderer = GetComponent<SpriteRenderer>();
+
+        PlayerAudio = GameObject.Find("PlayerDeathSFX");
+        m_PlayerSound = PlayerAudio.GetComponent<AudioSource>();
     }
     void Update()
     {
         healthbar.SetBar(m_player.Life);
 
         if (m_player.Life <= 0)
-        {
+        { 
+            m_PlayerSound.Play();
             Destroy(gameObject);
             Application.Quit();
         }

@@ -27,9 +27,13 @@ public class PotionsDisplay : MonoBehaviour
 
     public int HP;
 
+    GameObject BagAudio;
+    static AudioSource m_BagSound;
 
     void Start()
     {
+        BagAudio = GameObject.Find("BagSFX");
+        m_BagSound = BagAudio.GetComponent<AudioSource>();
 
         Potion_List = new GameObject[2];
         Potion = Resources.Load("Potion1Prefab") as GameObject;
@@ -66,6 +70,7 @@ public class PotionsDisplay : MonoBehaviour
 
             if (BoxImage.sprite == null)
             {
+                m_BagSound.Play();
                 BoxImage.sprite = sprite.sprite;
                 break;
             }

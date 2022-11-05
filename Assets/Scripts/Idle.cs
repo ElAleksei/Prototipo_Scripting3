@@ -19,6 +19,9 @@ public class Idle : State
     public Box [] Box_List;
     public GameObject m_WoodParticles;
     public GameObject m_Instantiate_Wood;
+    GameObject BoxAudio;
+    AudioSource m_BoxSound;
+
     public GameObject m_PotionParticles;
     public GameObject m_Instantiate_Potion;
 
@@ -34,6 +37,9 @@ public class Idle : State
 
     public override void OnUpdate()
     {
+        BoxAudio = GameObject.Find("BoxSFX");
+        m_BoxSound = BoxAudio.GetComponent<AudioSource>();
+
         Box_List = GameObject.FindObjectsOfType<Box>();
 
         if (Input.GetMouseButtonDown(0))
@@ -66,6 +72,7 @@ public class Idle : State
                     m_Instantiate_Wood = Instantiate(m_WoodParticles, null, true);
                     m_Instantiate_Wood.transform.position = new Vector3(Current_Box.transform.position.x, Current_Box.transform.position.y, Current_Box.transform.position.z);
                     WeaponDisplay.CreateWeapon(new Vector3(Current_Box.transform.position.x, Current_Box.transform.position.y, Current_Box.transform.position.z));
+                    m_BoxSound.Play();
                     Destroy(Current_Box.gameObject);
                 }
             }                  

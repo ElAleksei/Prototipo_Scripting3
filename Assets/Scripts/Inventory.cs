@@ -8,10 +8,16 @@ public class Inventory : MonoBehaviour
     Player player;
     GameObject m_Instantiate_Potion;
     GameObject m_PotionParticles;
+
+    GameObject PotionAudio;
+    AudioSource m_PotionSound;
     void Start()
     {
         player = FindObjectOfType<Player>();
         m_PotionParticles = Resources.Load("Potion_Particles") as GameObject;
+
+        PotionAudio = GameObject.Find("PotionSFX");
+        m_PotionSound = PotionAudio.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -28,11 +34,13 @@ public class Inventory : MonoBehaviour
                 if (Name == "Potion")
                 {
                     player.Life += 3;
+                    m_PotionSound.Play();
                 }
 
                 if (Name == "Potion2")
                 {
                     player.Life += 5;
+                    m_PotionSound.Play();
                 }
 
                 m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
@@ -52,11 +60,13 @@ public class Inventory : MonoBehaviour
                 if (Name == "Potion")
                 {
                     player.Life += 3;
+                    m_PotionSound.Play();
                 }
 
                 if (Name == "Potion2")
                 {
                     player.Life += 5;
+                    m_PotionSound.Play();
                 }
 
                 m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
@@ -76,11 +86,13 @@ public class Inventory : MonoBehaviour
                 if (Name == "Potion")
                 {
                     player.Life += 3;
+                    m_PotionSound.Play();
                 }
 
                 if (Name == "Potion2")
                 {
                     player.Life += 5;
+                    m_PotionSound.Play();
                 }
 
                 m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
@@ -100,11 +112,13 @@ public class Inventory : MonoBehaviour
                 if (Name == "Potion")
                 {
                     player.Life += 3;
+                    m_PotionSound.Play();
                 }
 
                 if (Name == "Potion2")
                 {
                     player.Life += 5;
+                    m_PotionSound.Play();
                 }
 
                 m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
@@ -124,11 +138,13 @@ public class Inventory : MonoBehaviour
                 if (Name == "Potion")
                 {
                     player.Life += 3;
+                    m_PotionSound.Play();
                 }
 
                 if (Name == "Potion2")
                 {
                     player.Life += 5;
+                    m_PotionSound.Play();
                 }
 
                 m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
@@ -148,11 +164,13 @@ public class Inventory : MonoBehaviour
                 if (Name == "Potion")
                 {
                     player.Life += 3;
+                    m_PotionSound.Play();
                 }
 
                 if (Name == "Potion2")
                 {
                     player.Life += 5;
+                    m_PotionSound.Play();
                 }
 
                 m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
@@ -172,11 +190,13 @@ public class Inventory : MonoBehaviour
                 if (Name == "Potion")
                 {
                     player.Life += 3;
+                    m_PotionSound.Play();
                 }
 
                 if (Name == "Potion2")
                 {
                     player.Life += 5;
+                    m_PotionSound.Play();
                 }
 
                 m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
@@ -196,11 +216,13 @@ public class Inventory : MonoBehaviour
                 if (Name == "Potion")
                 {
                     player.Life += 3;
+                    m_PotionSound.Play();
                 }
 
                 if (Name == "Potion2")
                 {
                     player.Life += 5;
+                    m_PotionSound.Play();
                 }
 
                 m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
@@ -220,11 +242,13 @@ public class Inventory : MonoBehaviour
                 if (Name == "Potion")
                 {
                     player.Life += 3;
+                    m_PotionSound.Play();
                 }
 
                 if (Name == "Potion2")
                 {
                     player.Life += 5;
+                    m_PotionSound.Play();
                 }
 
                 m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
