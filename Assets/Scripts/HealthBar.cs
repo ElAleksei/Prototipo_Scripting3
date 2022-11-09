@@ -10,6 +10,7 @@ public class HealthBar : MonoBehaviour
 
     public void SetBar(int Health)
     {
+        //Se actualiza la barra de vida a la vida del jugador
         health_slider.value = Health;
     }
 }

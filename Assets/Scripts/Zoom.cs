@@ -11,7 +11,9 @@ public class Zoom : MonoBehaviour
         cam = FindObjectOfType<Camera>();
     }
 
-
+    /// <summary>
+    /// Se hace zoom dependiendo de hacia donde se haga el scroll
+    /// </summary>
     void Update()
     {
         if(Input.mouseScrollDelta.y > 0)

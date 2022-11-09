@@ -54,6 +54,10 @@ public class WeaponDisplay : MonoBehaviour
         BowDisplay.damage = BowWeapon.Damage;
     }
 
+    /// <summary>
+    /// Se crea un arma random al destruir una caja
+    /// </summary>
+    /// <param name="Position"></param> Posicion actual del jugador
     public static void CreateWeapon(Vector3 Position)
     {
         Random_Weapon = Random.Range(0,Weapon_List.Length);

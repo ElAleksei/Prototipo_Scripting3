@@ -18,6 +18,10 @@ public class Attack : State
         Slash = SlashOff();
     }
 
+    /// <summary>
+    /// Se cargan todos los elementos de particulas y sonidos para el ataque
+    /// Se hace el daño al enemigo
+    /// </summary>
     public override void OnUpdate()
     {
         SwordAudio = GameObject.Find("SwordSFX");
@@ -45,6 +49,10 @@ public class Attack : State
 
     }
 
+    /// <summary>
+    /// Funcion para desactivar el canvas del slash
+    /// </summary>
+    /// <returns></returns>
     IEnumerator SlashOff()
     {
         yield return new WaitForSeconds(0.5f);

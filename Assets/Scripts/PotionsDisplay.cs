@@ -28,13 +28,14 @@ public class PotionsDisplay : MonoBehaviour
     public int HP;
 
     GameObject BagAudio;
-    static AudioSource m_BagSound;
+    public static AudioSource m_BagSound;
 
     void Start()
     {
         BagAudio = GameObject.Find("BagSFX");
         m_BagSound = BagAudio.GetComponent<AudioSource>();
 
+        //Creacion de lista de pociones
         Potion_List = new GameObject[2];
         Potion = Resources.Load("Potion1Prefab") as GameObject;
         Potion_2 = Resources.Load("Potion2Prefab") as GameObject;
@@ -49,9 +50,14 @@ public class PotionsDisplay : MonoBehaviour
         Potion2Display = Potion.GetComponent<PotionsDisplay>();
         Potion2Display.HP = Potion2.HP;
 
+        //Referencia del inventario
         Inventory = GameObject.FindGameObjectsWithTag("Inventory");
     }
 
+    /// <summary>
+    /// Con lista de pociones se crea una pocion random y se intancia en la posicion del jugador
+    /// </summary>
+    /// <param name="Position"></param> Posicion actual del jugador
     public static void CreatePotion(Vector3Int Position)
     {
         RandomPotion = Random.Range(0, Potion_List.Length);
@@ -60,6 +66,10 @@ public class PotionsDisplay : MonoBehaviour
         InsPotion.transform.position = WorldPosition;
     }
 
+    /// <summary>
+    /// Se dibuja el sprite de la pocion en el inventario, siempre en la casilla mas a la inzquierda siempre y cuando este desocupada
+    /// </summary>
+    /// <param name="Potion"></param> Gameobject sobre el que estuvo el jugador
     public static void DrawPotion(GameObject Potion)
     {       
         SpriteRenderer sprite = Potion.GetComponent<SpriteRenderer>();

@@ -23,13 +23,14 @@ public class Inventory : MonoBehaviour
     void Update()
     {
         player = FindObjectOfType<Player>();
-
+        //Cada if corresponde a un input del teclado
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Image PotionSprite = PotionsDisplay.Inventory[0].GetComponent<Image>();
-
+            //Revision de si la casilla correspondiente al input esta vacia
             if (PotionSprite != null)
             {
+                //Caso de uso y asignacion de la vida al jugador
                 string Name = PotionSprite.sprite.name;
                 if (Name == "Potion")
                 {

@@ -10,14 +10,19 @@ public class Enemy_Attack : State
     AudioSource m_PlayerHurtSound1;
     GameObject PlayerHurtAudio2;
     AudioSource m_PlayerHurtSound2;
-    AudioSource [] m_PlayerSounds;
+    AudioSource[] m_PlayerSounds;
 
     GameObject BloodParticles;
     GameObject m_InstantiateBlood;
     Player m_ScenePlayer;
 
+    IEnumerator Enemyslash;
+    /// <summary>
+    /// Se apaga el canvas del slash enemigo
+    /// </summary>
     public override void OnEnter()
     {
+        Enemyslash = EnemySlashOff();
         m_ScenePlayer = FindObjectOfType<Player>();
     }
     public override void OnUpdate()
@@ -33,10 +38,17 @@ public class Enemy_Attack : State
         m_Cooldown += Time.deltaTime;
         if (m_Cooldown > 1)
         {
+            //Se reinicia el cooldown y se actualiza la vida del jugador
             m_Cooldown = 0;
             m_Player.Life = m_Player.Life - m_Enemy.Damage;
-            int RandomSound = Random.Range(0,m_PlayerSounds.Length);
+            int RandomSound = Random.Range(0, m_PlayerSounds.Length);
             m_PlayerSounds[RandomSound].Play();
+
+            Vector3 Pos = Idle.m_Player.transform.position;
+            Pos.y += 0.5f;
+            Manager.EnemySlash.transform.position = Camera.main.WorldToScreenPoint(Pos);
+            Manager.EnemySlashImage.enabled = true;
+            StartCoroutine(Enemyslash);
 
             BloodParticles = Resources.Load("AttackParticles") as GameObject;
             m_InstantiateBlood = Instantiate(BloodParticles, null, true);
@@ -48,5 +60,14 @@ public class Enemy_Attack : State
     public override void OnExit()
     {
 
+    }
+    /// <summary>
+    /// Se desactiva el canvas del slash enemigo usando una corrutina
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator EnemySlashOff()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Manager.EnemySlashImage.enabled = false;
     }
 }

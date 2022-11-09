@@ -19,7 +19,9 @@ public class Enemy : Characters
         m_SkeletonSound = SkeletonAudio.GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// Se actualiza la situación del enemigo (Si ha muerto)
+    /// </summary>
     void Update()
     {
         if (m_Enemy.Life <= 0)

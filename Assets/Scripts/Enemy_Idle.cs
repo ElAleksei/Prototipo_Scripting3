@@ -10,12 +10,17 @@ public class Enemy_Idle : State
     public float m_EnemyAttackRange = 1f;
     public float m_EnemyRange = 4f;
     public static float m_Distance;
+
+    /// <summary>
+    /// Se otorga la pocision del tilemap al enemigo
+    /// </summary>
     public override void OnEnter()
     {
         m_EnemyCellPosition = Pathfinding.tilemap.WorldToCell(transform.position);
     }
     public override void OnUpdate()
     {
+        //Distancia entre el enemigo y el jugador
         m_Distance = (m_EnemyCellPosition - Idle.PlayerCellPosition).magnitude;
         m_Distance = Mathf.Abs(m_Distance);
 

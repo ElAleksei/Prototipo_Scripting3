@@ -45,6 +45,7 @@ public class Move : State
         cellPosition = Pathfinding.tilemap.WorldToCell(NewPosition);
         m_Magnitud = (PlayerPos - Idle.Target).magnitude;
 
+        //Revision de cajas en escena para comprobar si es posible moverse alli
         if (m_MoveBox_List != null)
         {
             for (int i = 0; i < m_MoveBox_List.Length; i++)
@@ -77,6 +78,7 @@ public class Move : State
             }
         }
 
+        //Se ajusta la tolerancia en caso de chocar con alguna pared
         if (m_Magnitud < m_Tolerance)
         {
             m_Tolerance = 0.2f;

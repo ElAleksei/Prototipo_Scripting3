@@ -17,6 +17,7 @@ public class Pathfinding
 
     public static void Initialize()
     {
+        //Diferentes tilemaps en el grid
         tilemap = GameObject.Find("Floor").GetComponent<Tilemap>();
         Is_Wall = GameObject.Find("Wall").GetComponent<Tilemap>();
         Is_Obstacle = GameObject.Find("Obstacles").GetComponent<Tilemap>();

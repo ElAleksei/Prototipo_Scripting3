@@ -41,6 +41,11 @@ public class Player: Characters
 
     }
 
+    /// <summary>
+    /// Se actualiza el sprite del jugador dependiendo del movimiento
+    /// </summary>
+    /// <param name="LastPos"></param> Anterior posicion del jugador
+    /// <param name="CurrentPos"></param> Actuak posicion del jugador
     public void UpdateSprite(Vector2 LastPos, Vector2 CurrentPos)
     {
         //Ariba derecha

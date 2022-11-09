@@ -15,13 +15,18 @@ public class Weapon_Change : MonoBehaviour
         image = GetComponent<Image>();
         player = GameObject.Find("Player").GetComponent<Player>();
     }
+
+    /// <summary>
+    /// Se cambia el sprite del canvas por la del arma que se recogio
+    /// </summary>
+    /// <param name="Weapon"></param> Arma sobre la que estuvo el jugador
     public static void UIWeapon(GameObject Weapon)
     {
         weapondisplay = Weapon.GetComponent<WeaponDisplay>();
         newsprite = Weapon.GetComponent<SpriteRenderer>();
         image.color = new Color(255, 255, 255, 255);
+        PotionsDisplay.m_BagSound.Play();
         image.sprite = newsprite.sprite;
-        player.Damage = weapondisplay.damage;
-        //Debug.Log("A");
+        player.Damage = weapondisplay.damage;        
     }
 }
