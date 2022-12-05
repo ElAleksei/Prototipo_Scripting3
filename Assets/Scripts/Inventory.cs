@@ -43,12 +43,13 @@ public class Inventory : MonoBehaviour
                     player.Life += 5;
                     m_PotionSound.Play();
                 }
-
+                
                 m_Instantiate_Potion = Instantiate(m_PotionParticles, null, true);
                 m_Instantiate_Potion.transform.position = player.transform.position;
             }
 
             PotionSprite.sprite = null;
+            PotionSprite.color = new Color(0, 0, 0, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -75,6 +76,7 @@ public class Inventory : MonoBehaviour
             }
 
             PotionSprite.sprite = null;
+            PotionSprite.color = new Color(0, 0, 0, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
@@ -101,6 +103,7 @@ public class Inventory : MonoBehaviour
             }
 
             PotionSprite.sprite = null;
+            PotionSprite.color = new Color(0, 0, 0, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
@@ -127,6 +130,7 @@ public class Inventory : MonoBehaviour
             }
 
             PotionSprite.sprite = null;
+            PotionSprite.color = new Color(0, 0, 0, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha5))
@@ -153,6 +157,7 @@ public class Inventory : MonoBehaviour
             }
 
             PotionSprite.sprite = null;
+            PotionSprite.color = new Color(0, 0, 0, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha6))
@@ -179,6 +184,7 @@ public class Inventory : MonoBehaviour
             }
 
             PotionSprite.sprite = null;
+            PotionSprite.color = new Color(0, 0, 0, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha7))
@@ -205,6 +211,7 @@ public class Inventory : MonoBehaviour
             }
 
             PotionSprite.sprite = null;
+            PotionSprite.color = new Color(0, 0, 0, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha8))
@@ -231,6 +238,7 @@ public class Inventory : MonoBehaviour
             }
 
             PotionSprite.sprite = null;
+            PotionSprite.color = new Color(0, 0, 0, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha9))
@@ -257,6 +265,7 @@ public class Inventory : MonoBehaviour
             }
 
             PotionSprite.sprite = null;
+            PotionSprite.color = new Color(0, 0, 0, 0);
         }
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine.Tilemaps;
 
 public class Idle : State
 {
+
     public static Vector3Int PlayerCellPosition;
     public static Vector2 Target;
     public static Vector2 InitialPos;
@@ -15,6 +16,10 @@ public class Idle : State
     public float m_Tolerance = 1f;
     public float m_Mag;
     public float m_Distance_From_Enemy;
+    public float m_Distance_From_Enemy2;
+
+    public static bool AttackEnemy;
+    public static bool AttackEnemy2;
 
     public Box [] Box_List;
     public GameObject m_WoodParticles;
@@ -31,8 +36,12 @@ public class Idle : State
     /// <summary>
     /// Se otorga la posicion del jugador en tilemap
     /// </summary>
+    /// 
+
     public override void OnEnter()
     {
+        m_Player = GameObject.Find("Player").GetComponent<Player>();
+
         PlayerCellPosition = Pathfinding.tilemap.WorldToCell(transform.position);
 
         m_WoodParticles = Resources.Load("Wood_Particles") as GameObject;
@@ -90,10 +99,19 @@ public class Idle : State
             //Se revisa la distancia con el enemigo
             m_Distance_From_Enemy = (PlayerCellPosition - Enemy_Idle.m_EnemyCellPosition).magnitude;
             m_Distance_From_Enemy = Mathf.Abs(m_Distance_From_Enemy);
-            
+            m_Distance_From_Enemy2 = (PlayerCellPosition - Enemy2_Idle.m_Enemy2CellPosition).magnitude;
+            m_Distance_From_Enemy2 = Mathf.Abs(m_Distance_From_Enemy2);
+
             //En caso de ataque
             if (m_V2_Target == Enemy_Idle.m_EnemyCellPosition & m_Distance_From_Enemy <= m_Tolerance)
             {
+                AttackEnemy = true;
+                m_fsm.SetState(m_fsm.m_Attack);
+            }
+
+            if (m_V2_Target == Enemy2_Idle.m_Enemy2CellPosition & m_Distance_From_Enemy2 <= m_Tolerance)
+            {
+                AttackEnemy2 = true;
                 m_fsm.SetState(m_fsm.m_Attack);
             }
 

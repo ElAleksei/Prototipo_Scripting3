@@ -40,8 +40,20 @@ public class Attack : State
         Manager.SlashImage.enabled = true;
         StartCoroutine(Slash);
 
-        m_Enemy.Life = m_Enemy.Life - m_Player.Damage;
-        m_fsm.SetState(m_fsm.m_Idle);
+        if (Idle.AttackEnemy == true)
+        {
+            m_Enemy.Life = m_Enemy.Life - m_Player.Damage;
+            Idle.AttackEnemy = false;
+            m_fsm.SetState(m_fsm.m_Idle);
+        }
+
+        if (Idle.AttackEnemy2 == true)
+        {
+            m_Enemy2.Life = m_Enemy2.Life - m_Player.Damage;
+            Idle.AttackEnemy2 = false;
+            m_fsm.SetState(m_fsm.m_Idle);
+        }
+        
     }
 
     public override void OnExit()

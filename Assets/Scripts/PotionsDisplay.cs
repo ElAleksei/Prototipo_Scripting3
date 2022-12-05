@@ -22,7 +22,7 @@ public class PotionsDisplay : MonoBehaviour
 
     public GameObject m_PotionParticles;
 
-    public static GameObject [] Inventory;
+    public static GameObject [] Inventory = new GameObject[9];
     public static Image CubeImage;
 
     public int HP;
@@ -51,7 +51,17 @@ public class PotionsDisplay : MonoBehaviour
         Potion2Display.HP = Potion2.HP;
 
         //Referencia del inventario
-        Inventory = GameObject.FindGameObjectsWithTag("Inventory");
+
+        Inventory[0] = GameObject.Find("1");
+        Inventory[1] = GameObject.Find("2");
+        Inventory[2] = GameObject.Find("3");
+        Inventory[3] = GameObject.Find("4");
+        Inventory[4] = GameObject.Find("5");
+        Inventory[5] = GameObject.Find("6");
+        Inventory[6] = GameObject.Find("7");
+        Inventory[7] = GameObject.Find("8");
+        Inventory[8] = GameObject.Find("9");
+
     }
 
     /// <summary>
@@ -81,6 +91,7 @@ public class PotionsDisplay : MonoBehaviour
             if (BoxImage.sprite == null)
             {
                 m_BagSound.Play();
+                BoxImage.color = new Color(255, 255, 255, 255);
                 BoxImage.sprite = sprite.sprite;
                 break;
             }

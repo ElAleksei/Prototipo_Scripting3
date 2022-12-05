@@ -28,6 +28,7 @@ public class Enemy : Characters
         {
             PotionsDisplay.CreatePotion(Enemy_Idle.m_EnemyCellPosition);
             m_SkeletonSound.Play();
+
             Destroy(gameObject);
             Enemy_Idle.m_EnemyCellPosition = new Vector3Int(0, 0, 20);
         }

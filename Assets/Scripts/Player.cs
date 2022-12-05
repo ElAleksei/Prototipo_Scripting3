@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Player: Characters
 {
@@ -12,8 +14,15 @@ public class Player: Characters
 
     public HealthBar healthbar;
 
+    public string m_Player_Name;
+
+    public static TextMeshProUGUI m_NameText;
+    public GameObject m_InputText;
+
     GameObject PlayerAudio;
     AudioSource m_PlayerSound;
+
+    public Canvas m_Canvas;
 
     // Start is called before the first frame update
     void Start()
@@ -27,16 +36,23 @@ public class Player: Characters
 
         PlayerAudio = GameObject.Find("PlayerDeathSFX");
         m_PlayerSound = PlayerAudio.GetComponent<AudioSource>();
+
+        m_NameText = new TextMeshProUGUI();
+        m_NameText.text = "A";
     }
     void Update()
-    {
+    {       
+        m_NameText = m_InputText.gameObject.GetComponent<TextMeshProUGUI>();
+
         healthbar.SetBar(m_player.Life);
 
         if (m_player.Life <= 0)
         { 
             m_PlayerSound.Play();
-            Destroy(gameObject);
-            Application.Quit();
+            m_Canvas.enabled = true;
+            Manager.m_Script.enabled = false;
+            //Destroy(gameObject);
+            //Application.Quit();
         }
 
     }
